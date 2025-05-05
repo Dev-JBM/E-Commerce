@@ -92,18 +92,18 @@
             <div class="login-content-container">
               <div class="login-content">
                 <div class="login-form-container">
-                  <form class="login-form" action="">
+                  <form class="login-form" action="./back-end/login.php" method="POST">
                     <input
                       class="login-input"
                       type="text"
-                      name="login_username"
+                      name="user"
                       placeholder="Phone number / Username / Email"
                     />
                     <div class="password-container">
                       <input
                         class="password-input"
                         type="password"
-                        name="login_password"
+                        name="password"
                         placeholder="Password"
                       />
                       <span class="toggle-password">
@@ -117,7 +117,7 @@
                         />
                       </span>
                     </div>
-                    <input class="login-submit" type="submit" value="Sign In" />
+                    <button class="login-submit" type="submit" value="Sign In">Sign In</button>
                   </form>
                 </div>
 
@@ -170,37 +170,44 @@
                         type="text"
                         name="firstname"
                         placeholder="First Name"
+                        required
                       />
                       <input
                         type="text"
                         name="middlename"
                         placeholder="Middle Name"
+                        required
                       />
                       <input
                         type="text"
-                        name="lasttname"
+                        name="lastname"
                         placeholder="Last Name"
+                        required
                       />
                       <input
                         type="text"
                         name="username"
                         placeholder="Username"
+                        required
                       />
                       <input type="email" name="email" placeholder="Email" />
                       <input
                         type="date"
                         name="birthday"
                         placeholder="Birthdate"
+                        required
                       />
                       <input
                         type="text"
                         name="phone_number"
                         placeholder="Phone Number"
+                        required
                       />
                       <input
                         type="text"
                         name="address"
                         placeholder="Street | Barangay | City | Province"
+                        required
                       />
                       <div class="password-container">
                         <input
@@ -208,6 +215,7 @@
                           type="password"
                           name="password"
                           placeholder="Password"
+                          required
                         />
                         <span class="toggle-password">
                           <img
@@ -226,6 +234,7 @@
                           type="password"
                           name="confirm_password"
                           placeholder="Confirm Password"
+                          required
                         />
                         <span class="toggle-password">
                           <img
